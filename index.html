@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Streaming Website</title>
+    <link rel="icon" type="image/x-icon" href="/web/pic/Quran.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quran Streaming Website</h1>
+    </header>
+    <main>
+        <div class="audio-list">
+            <h2 class="color1">Para Listing</h2>
+            <ul>
+                <!-- Example audio entries -->
+                <li><button onclick="playAudio('/web/Quran/Para 1.mp3', this)">Play Para 1</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 2.mp3', this)">Play Para 2</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 3.mp3', this)">Play Para 3</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 4.mp3', this)">Play Para 4</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 5.mp3', this)">Play Para 5</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 6.mp3', this)">Play Para 6</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 7.mp3', this)">Play Para 7</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 8.mp3', this)">Play Para 8</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 9.mp3', this)">Play Para 9</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 10.mp3', this)">Play Para 10</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 11.mp3', this)">Play Para 11</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 12.mp3', this)">Play Para 12</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 13.mp3', this)">Play Para 13</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 14.mp3', this)">Play Para 14</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 15.mp3', this)">Play Para 15</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 16.mp3', this)">Play Para 16</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 17.mp3', this)">Play Para 17</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 18.mp3', this)">Play Para 18</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 19.mp3', this)">Play Para 19</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 20.mp3', this)">Play Para 20</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 21.mp3', this)">Play Para 21</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 22.mp3', this)">Play Para 22</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 23.mp3', this)">Play Para 23</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 24.mp3', this)">Play Para 24</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 25.mp3', this)">Play Para 25</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 26.mp3', this)">Play Para 26</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 27.mp3', this)">Play Para 27</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 28.mp3', this)">Play Para 28</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 29.mp3', this)">Play Para 29</button></li>
+                <li><button onclick="playAudio('/web/Quran/Para 30.mp3', this)">Play Para 30</button></li>
+                <!-- Add more audio entries here -->
+            </ul>
+        </div>
+        <div class="audio-controls">
+            <audio id="audioPlayer" controls></audio>
+            <div>
+                <label for="volumeControl">Volume: </label>
+                <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
+            </div>
+        </div>
+        <div class="popup" id="popup" style="display: none;">
+            <h2>Last Listened Audio</h2>
+            <p id="lastListened"></p>
+            <h3>History</h3>
+            <ul id="historyList"></ul>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Quran Streaming Website</p>
+        <p>Check out my <a href="https://github.com/Asadullah404" target="_blank">GitHub</a></p>
+    </footer>
+    <a href="https://wa.me/message/M3ECBZ74CQBMJ1?src=qr" class="whatsapp-button" target="_blank">
+        <img src="/web/pic/whatsapp.gif" alt="WhatsApp">
+    </a>
+    <script src="script.js"></script>
+</body>
+</html>
